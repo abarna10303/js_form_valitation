@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="form-section">
+        <h1>COURSE REGISTRATION FORM</h1>
+        <div class="form-container">
+            <h2>Training Course</h2>
+            <form action="post" autocomplete="off">
+                <input type="text" placeholder="Name" class="txt-box" id="firstname">
+                <span id="fnametext" class="alert"></span>
+                <input type="text" placeholder="Full Name" class="txt-box" id="fullname">
+                <span class="alert" id="fultext"></span>
+                <input type="date" placeholder="Date of Birth" class="txt-box">
+                <span class="alert">* Please Select the Date of Birth</span>
+                <select  class="txt-box" id="gender">
+                    <option value="0">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">FeMale</option>
+                    <option value="other">Other</option>
+                </select>
+                <span id="gendertext" class="alert"></span>
+                <select  class="txt-box" id="course">
+                    <option value="0">Course</option>
+                    <option value="fed">Front-end Development</option>
+                    <option value="bed">Back-end Development</option>
+                    <option value="ds">Data Science</option>
+                    <option value="ts">Testiong</option>
+                </select>
+                <span class="alert" id="coursetext"></span>
+                <input type="email" placeholder="Email" class="txt-box" id="email">
+                <span class="alert" id="eamiltext"></span>
+                <textarea name="" id="address" cols="30" rows="10" placeholder="Address" class="txt-box"></textarea>
+                <span class="alert" id="addresstext"></span>
+                <input type="number" placeholder="Phone Number" class="txt-box" id="phoneno">
+                <span class="alert" id="phonenotext"></span>
+                <button type="submit" class="btn" id="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+   <script src="main.js"></script> 
+</body>
+</html>
